@@ -1,16 +1,17 @@
 # Building and Deploying a Docker Image With AWS CodePipeline
 
-## <!--BEGIN STABILITY BANNER-->
+## Note
 
-![Stability: Stable](https://img.shields.io/badge/stability-Stable-success.svg?style=for-the-badge)
+This is a fork of [aws-cdk-examples/typescript/codepipeline-build-deploy/](https://github.com/aws-samples/aws-cdk-examples/tree/main/typescript/codepipeline-build-deploy)
 
-> **This is a stable example. It should successfully build out of the box**
->
-> This example is built on Construct Libraries marked "Stable" and does not have any infrastructure prerequisites to build.
+## Setup Needed
 
----
+Following `env` variables need to be set before deploying the CDK project
 
-<!--END STABILITY BANNER-->
+* `github_owner` - GitHub Username
+* `github_repo` - GitHub Repository Name
+* `github_branch` - Git Branch (default `main`)
+* `github_oauth_token` - Personal `GitHub` token to allow `CodeBuild` to pull the `source files` and subscribe to `webhooks`
 
 ## Overview
 
